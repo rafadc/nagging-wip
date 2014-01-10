@@ -1,4 +1,4 @@
-require_relative '../wip_checker'
+require 'spec_helper'
 
 describe "nagging wip notifier" do 
   before :each do
