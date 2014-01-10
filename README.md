@@ -1,3 +1,5 @@
+# THIS IS STILL NOT WORKING. I'M JUST PLAYING A LITTLE BIT :P
+
 # Nagging WIP notifier
 
 This is a simple tool I wrote to send automatically an email to a 
