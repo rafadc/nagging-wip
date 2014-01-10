@@ -8,13 +8,13 @@ describe "nagging wip notifier" do
     @max_wip = 4
   end
     
-  it "does not send a notification if WIP over the specified value" do
+  it "does not send a notification if current WIP under the specified value" do
     @project.stub(:current_wip => 4)
     @notifier.should_not_receive(:wip_exceeded)
     @wip_checker.check_wip(@max_wip)
   end
 
-  it "does send a notification if WIP over the specified value" do
+  it "does send a notification if current WIP over the specified value" do
     @project.stub(:current_wip => 7)
     @notifier.should_receive(:wip_exceeded)
     @wip_checker.check_wip(@max_wip)
