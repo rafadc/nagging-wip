@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'mail'
+
 group :test do
   gem 'rspec-core'
   gem 'rspec-expectations'

@@ -7,7 +7,8 @@ describe "Email notification" do
     @email_config = {'from' => "from@domain.com",
                        'subject' => "Wip surpassed",
                        'body' => "Check it NOW!",
-                       'emails' => ["sample@domain.com"]}
+                       'server' => 'my_address',
+                       'port' => 'my_port'}
   end
 
   it "raises an exception if no configuration has been specified" do
@@ -18,7 +19,7 @@ describe "Email notification" do
   it "sends an email with correct attributes if a single address has been specified" do
     @email_config['emails'] = ['sample@domain.com']
     @config.stub(:for).with(:email).and_return(@email_config)
-    @mailer.should_receive(:send).with("from@domain.com", "sample@domain.com", "Wip surpassed", "Check it NOW!")
+    @mailer.should_receive(:send).with({from: 'from@domain.com', to: 'sample@domain.com', subject: 'Wip surpassed', body: 'Check it NOW!'}, anything())
     notifier = EmailNotifier.new(@config, @mailer)
     notifier.wip_exceeded
   end
@@ -26,8 +27,8 @@ describe "Email notification" do
   it "sends an email with correct attributes if a multiple address have been specified" do
     @email_config['emails'] = ['sample@domain.com', 'other@domain.com']
     @config.stub(:for).with(:email).and_return(@email_config)
-    @mailer.should_receive(:send).with("from@domain.com", "sample@domain.com", "Wip surpassed", "Check it NOW!")
-    @mailer.should_receive(:send).with("from@domain.com", "other@domain.com", "Wip surpassed", "Check it NOW!")
+    @mailer.should_receive(:send).with({from: 'from@domain.com', to: 'sample@domain.com', subject: 'Wip surpassed', body: 'Check it NOW!'}, anything())
+    @mailer.should_receive(:send).with({from: 'from@domain.com', to: 'other@domain.com', subject: 'Wip surpassed', body: 'Check it NOW!'}, anything())
     notifier = EmailNotifier.new(@config, @mailer)
     notifier.wip_exceeded
   end

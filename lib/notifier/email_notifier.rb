@@ -11,9 +11,14 @@ class EmailNotifier
 
   private
   def send_email(email)
-    @email_sender.send(@email_config["from"],
-                       email,
-                       @email_config["subject"],
-                       @email_config["body"])
+    @email_sender.send({from: @email_config["from"],
+                        to: email,
+                        subject: @email_config["subject"],
+                        body: @email_config["body"]},
+                       {server:@email_config["server"],
+                        port: @email_config["port"],
+                        username: @email_config["username"],
+                        password: @email_config["password"],
+                        use_ssl: @email_config["use_ssl"]})
   end
 end
