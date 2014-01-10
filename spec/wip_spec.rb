@@ -1,22 +1,22 @@
-def nagging_wip(notifier, project, max_wip)
-  notifier.wip_exceeded if project.current_wip > max_wip
-end
+require_relative '../wip_checker'
 
 describe "nagging wip notifier" do 
   before :each do
     @notifier = double("Notifier")
+    @project = double("Project")
+    @wip_checker = WipChecker.new(@notifier, @project)
     @max_wip = 4
   end
     
   it "does not send a notification if WIP over the specified value" do
-    project = double("Project", :current_wip => 4)
+    @project.stub(:current_wip => 4)
     @notifier.should_not_receive(:wip_exceeded)
-    nagging_wip(@notifier, project, @max_wip)
+    @wip_checker.check_wip(@max_wip)
   end
 
   it "does send a notification if WIP over the specified value" do
-    project = double("Project", :current_wip => 7)
+    @project.stub(:current_wip => 7)
     @notifier.should_receive(:wip_exceeded)
-    nagging_wip(@notifier, project, @max_wip)
+    @wip_checker.check_wip(@max_wip)
   end
 end
