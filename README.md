@@ -27,6 +27,6 @@ email:
     username: username # Optional
     password: password # Optional
     from_address: my@email.com
-    subject: 'WIP too high in out awesome project'
+    subject: 'WIP too high in our awesome project'
     body: 'We need to do something soon!'
 ```
