@@ -6,8 +6,13 @@ class EmailNotifier
   end
 
   def wip_exceeded
-    @email_sender.send(@email_config["from"], 
-                       @email_config["emails"].first,
+    @email_config["emails"].each {|email| send_email email}
+  end
+
+  private
+  def send_email(email)
+    @email_sender.send(@email_config["from"],
+                       email,
                        @email_config["subject"],
                        @email_config["body"])
   end
