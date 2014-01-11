@@ -4,7 +4,7 @@ class WipChecker
     @project = project
   end
 
-  def check_wip(max_wip)
-    @notifier.wip_exceeded if @project.current_wip > max_wip
+  def check_wip
+    @notifier.wip_exceeded if @project.current_wip > @project.max_wip
   end
 end

@@ -51,11 +51,12 @@ These are the sources of the WIP for the team.
 
 #### Mock projects
 
-This is just a mock that we can use to test out notifications.
+This is just a mock that we can use to test notifications.
 
 ```yaml
 mock_project:
     current_wip: 6
+    max_wip: 4
 ```
 
 ## Development
