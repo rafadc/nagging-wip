@@ -19,6 +19,7 @@ GEM
     diff-lcs (1.2.4)
     docile (1.1.2)
     ffi (1.9.3)
+    ffi (1.9.3-x86-mingw32)
     formatador (0.2.4)
     guard (2.2.5)
       formatador (>= 0.2.4)
@@ -48,6 +49,11 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
+    pry (0.9.12.4-x86-mingw32)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+      win32console (~> 1.3)
     rake (10.1.0)
     rb-fchange (0.0.6)
       ffi
@@ -79,6 +85,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    win32console (1.3.2-x86-mingw32)
 
 PLATFORMS
   ruby

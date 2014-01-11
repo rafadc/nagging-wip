@@ -1,7 +1,10 @@
+require 'json'
+
 require_relative 'nagging_wip/cli/cli'
 require_relative 'nagging_wip/notifier/console_notifier'
 require_relative 'nagging_wip/notifier/email_notifier'
 require_relative 'nagging_wip/notifier/email_sender'
 require_relative 'nagging_wip/project/mock_project'
+require_relative 'nagging_wip/project/pivotal_tracker_project'
 require_relative 'nagging_wip/file_configuration'
 require_relative 'nagging_wip/wip_checker'

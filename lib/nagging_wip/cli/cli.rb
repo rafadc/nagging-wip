@@ -8,6 +8,8 @@ class CLI
     end
     if config.for(:mock_project)
       project = MockProject.new(config)
+    elsif config.for(:pivotal_tracker_project)
+      project = PivotalTrackerProject.new(config)
     end
     WipChecker.new(notifier, project).check_wip
   end

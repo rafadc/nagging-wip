@@ -49,7 +49,18 @@ console:
 
 These are the sources of the WIP for the team.
 
-#### Mock projects
+#### Pivotal tracker project
+
+Takes current iteration of a Pivotal tracker project
+
+```yaml
+pivotal_project:
+    token: jkfduisj97823974j2kl24899234 # Pivotal API token
+    project_id: 84739
+    max_wip: 4
+```
+
+#### Mock project
 
 This is just a mock that we can use to test notifications.
 
