@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'nagging_wip'
+
+CLI.new.run
