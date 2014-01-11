@@ -52,3 +52,6 @@ mock_project:
     current_wip: 6
 ```
 
+## Development
+
+[![Build Status](https://travis-ci.org/rafadc/nagging-wip.png?branch=master)](https://travis-ci.org/rafadc/nagging-wip)
