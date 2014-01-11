@@ -7,6 +7,7 @@ group :test do
   gem 'rspec-expectations'
   gem 'rspec-mocks'
   gem 'rake'
+  gem 'coveralls', require: false
 end
 
 group :development do

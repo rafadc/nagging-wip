@@ -54,6 +54,4 @@ mock_project:
 
 ## Development
 
-[![Build Status](https://travis-ci.org/rafadc/nagging-wip.png?branch=master)](https://travis-ci.org/rafadc/nagging-wip)
-
-[![Code Climate](https://codeclimate.com/github/rafadc/nagging-wip.png)](https://codeclimate.com/github/rafadc/nagging-wip)
+[![Build Status](https://travis-ci.org/rafadc/nagging-wip.png?branch=master)](https://travis-ci.org/rafadc/nagging-wip) [![Code Climate](https://codeclimate.com/github/rafadc/nagging-wip.png)](https://codeclimate.com/github/rafadc/nagging-wip) [![Coverage Status](https://coveralls.io/repos/rafadc/nagging-wip/badge.png)](https://coveralls.io/r/rafadc/nagging-wip)
