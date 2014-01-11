@@ -1,4 +1,4 @@
 require 'coveralls'
 Coveralls.wear!
 
-require_relative '../wip_checker'
+require_relative '../lib/nagging_wip'
