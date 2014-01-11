@@ -14,7 +14,7 @@ gem install nagging-wip
 
 ## Configuration
 
-You must place a __.nagging_wip.yml__ file in _$HOME_
+You must place a __.nagging_wip.yml__ file in home folder.
 
 There you can add several sections for the different notifiers and projects
 
