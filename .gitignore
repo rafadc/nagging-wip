@@ -1,3 +1,4 @@
 tmp/
 Guardfile
 coverage/
+pkg/
