@@ -30,3 +30,25 @@ email:
     subject: 'WIP too high in our awesome project'
     body: 'We need to do something soon!'
 ```
+
+#### Console
+
+This one just outputs the information to the console. I use this for testing my projects.
+
+```yaml
+console:
+    message: 'WIP surpassed'
+```
+### Projects
+
+These are the sources of the WIP for the team.
+
+#### Mock projects
+
+This is just a mock that we can use to test out notifications.
+
+```yaml
+mock_project:
+    current_wip: 6
+```
+
