@@ -55,3 +55,5 @@ mock_project:
 ## Development
 
 [![Build Status](https://travis-ci.org/rafadc/nagging-wip.png?branch=master)](https://travis-ci.org/rafadc/nagging-wip)
+
+[![Code Climate](https://codeclimate.com/github/rafadc/nagging-wip.png)](https://codeclimate.com/github/rafadc/nagging-wip)
