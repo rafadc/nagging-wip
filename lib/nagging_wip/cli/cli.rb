@@ -9,6 +9,6 @@ class CLI
     if config.for(:mock_project)
       project = MockProject.new(config)
     end
-    WipChecker.new(notifier, project)
+    WipChecker.new(notifier, project).check_wip
   end
 end
