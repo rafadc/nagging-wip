@@ -60,7 +60,7 @@ These are the sources of the WIP for the team.
 Takes current iteration of a Pivotal tracker project
 
 ```yaml
-pivotal_project:
+pivotal_tracker_project:
     token: jkfduisj97823974j2kl24899234 # Pivotal API token
     project_id: 84739
     max_wip: 4
