@@ -15,8 +15,8 @@ class EmailNotifier
                         to: email,
                         subject: @email_config["subject"],
                         body: @email_config["body"]},
-                       {server:@email_config["server"],
-                        port: @email_config["port"],
+                       {server:@email_config["smtp_server"],
+                        port: @email_config["smtp_port"],
                         username: @email_config["username"],
                         password: @email_config["password"],
                         use_ssl: @email_config["use_ssl"]})

@@ -9,7 +9,7 @@ class EmailSender
     mail.delivery_method :smtp,
                           address: smtp_config[:server],
                           port: smtp_config[:port],
-                          username: smtp_config[:username],
+                          user_name: smtp_config[:username],
                           password: smtp_config[:password],
                           enable_ssl: smtp_config[:enable_ssl]
     mail.deliver
