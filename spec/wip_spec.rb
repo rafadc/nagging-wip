@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "nagging wip notifier" do
+describe "WIP checker" do
   before :each do
     @notifier = double("Notifier")
     @project = double("Project")
