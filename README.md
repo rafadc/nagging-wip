@@ -1,10 +1,17 @@
-# THIS IS STILL NOT USEABLE. I'M JUST PLAYING A LITTLE BIT :P
-
 # Nagging WIP notifier
 
 This is a simple tool I wrote to send automatically an email to a 
 team of people if the WIP at a given point in time surpasses a
 value.
+
+This is under heavy development so I suppose that many things will change soon and something may not work ;)
+
+## Installation
+
+This is not yet pushed to rubygems. You have to clone the source and
+
+        rake install
+
 
 ## Usage
 
