@@ -30,6 +30,7 @@ email:
     smtp_port: 25
     username: username # Optional
     password: password # Optional
+    use_ssl: false
     from_address: my@email.com
     subject: 'WIP too high in our awesome project'
     body: 'We need to do something soon!'
