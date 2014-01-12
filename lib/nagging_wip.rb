@@ -1,4 +1,5 @@
 require 'json'
+require 'mail'
 
 require_relative 'nagging_wip/cli/cli'
 require_relative 'nagging_wip/notifier/console_notifier'
