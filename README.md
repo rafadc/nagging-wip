@@ -8,8 +8,9 @@ This is under heavy development so I suppose that many things will change soon a
 
 ## Installation
 
-This is not yet pushed to rubygems. You have to clone the source and
+This is not yet pushed to rubygems so I'm afraid you need to:
 
+        git clone https://github.com/rafadc/nagging-wip
         rake install
 
 
