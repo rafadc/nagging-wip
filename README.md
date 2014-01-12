@@ -1,4 +1,4 @@
-# THIS IS STILL NOT WORKING. I'M JUST PLAYING A LITTLE BIT :P
+# THIS IS STILL NOT USEABLE. I'M JUST PLAYING A LITTLE BIT :P
 
 # Nagging WIP notifier
 
@@ -6,11 +6,9 @@ This is a simple tool I wrote to send automatically an email to a
 team of people if the WIP at a given point in time surpasses a
 value.
 
-## Installation
+## Usage
 
-```
-gem install nagging-wip
-```
+Just install and set up a user for this. At this moment you can set a cron job that runs __nagging-wip__ command periodically
 
 ## Configuration
 
