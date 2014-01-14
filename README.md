@@ -77,6 +77,54 @@ mock_project:
     max_wip: 4
 ```
 
+## Example
+
+Let's prepare! We can test that everything is up and running if we create the following config file
+
+```yaml
+console:
+    message: 'WIP surpassed'
+mock_project:
+    current_wip: 6
+    max_wip: 4
+```
+
+If we run the command
+
+        nagging-wip
+
+we should get the following output
+
+        WIP surpassed
+
+We can then switch to a more useful configuration using pivotal tracker and sending emails
+
+```yaml
+pivotal_tracker_project:
+    token: jkfduisj97823974j2kl24899234 # Pivotal API token
+    project_id: 84739
+    max_wip: 4
+email:
+    emails:
+        - teammate@email.com
+        - other@email.com
+    smtp_server: mail.myserver.com
+    smtp_port: 25
+    username: username # Optional
+    password: password # Optional
+    use_ssl: false
+    from: my@email.com
+    subject: 'WIP too high in our awesome project'
+    body: 'We need to do something soon!'
+```
+
+Now, how do we run this periodically? Well, at the moment there is no daemon mode yet so we can add it to our cron with a line line the following
+
+        * 9,13,15 * * * bash -l -c nagging-wip
+
+This will cause the WIP to be checked three times a day at 9, 13 and 15 hours. I run it under a new login shell since I'm using RVM. If you use system ruby you can just run nagging-wip.
+
+
 ## Development
 
 [![Build Status](https://travis-ci.org/rafadc/nagging-wip.png?branch=master)](https://travis-ci.org/rafadc/nagging-wip) [![Code Climate](https://codeclimate.com/github/rafadc/nagging-wip.png)](https://codeclimate.com/github/rafadc/nagging-wip) [![Coverage Status](https://coveralls.io/repos/rafadc/nagging-wip/badge.png)](https://coveralls.io/r/rafadc/nagging-wip)
