@@ -118,7 +118,7 @@ email:
     body: 'We need to do something soon!'
 ```
 
-Now, how do we run this periodically? Well, at the moment there is no daemon mode yet so we can add it to our cron with a line line the following
+Now, how do we run this periodically? Well, at the moment there is no daemon mode yet so we can add it to our cron with a line like the following
 
         * 9,13,15 * * * bash -l -c nagging-wip
 
